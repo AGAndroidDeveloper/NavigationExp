@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        >
+
+
+        <item
+            android:id="@+id/home"
+            android:title="@string/home"
+            android:icon="@drawable/baseline_home_24"
+            android:checked="true"
+            />
+        <item
+            android:id="@+id/reward"
+            android:title="@string/reward"
+            android:icon="@drawable/baseline_cruelty_free_24"
+            />
+        <item
+            android:id="@+id/profile"
+            android:title="@string/profile"
+            android:icon="@drawable/baseline_person_24"
+
+            />
+
+    </group>
+
+</menu>

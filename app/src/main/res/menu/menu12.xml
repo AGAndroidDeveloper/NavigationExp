@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:checkableBehavior="single"
+    android:id="@+id/group1">
+
+    <item
+        android:id="@+id/send"
+        android:icon="@drawable/baseline_outbox_24"
+        android:title="@string/send"
+        android:checked="true"
+       />
+    <item
+        android:id="@+id/likes_Image"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="@string/likes"
+ />
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/baseline_delete_24"
+        android:title="@string/delete"
+    />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/baseline_local_grocery_store_24"
+        android:title="@string/shop"
+/>
+</group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subtitle"
+            android:title="@string/more"
+            android:icon="@drawable/baseline_more_24">
+            <menu>
+                <item
+                    android:id="@+id/collection"
+                    android:icon="@drawable/baseline_collections_24"
+                    android:title="@string/collection" />
+
+
+
+            </menu>
+        </item>
+    </group>
+</menu>

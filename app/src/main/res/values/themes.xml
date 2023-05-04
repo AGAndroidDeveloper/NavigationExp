@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NavigationDrawer" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/custom_toolbar_title_color</item>
+<item name="colorOnSurface">@color/pink</item>
+
+<!--        <item name="colorOnSecondary">#B6EADA</item>-->
+<!--        <item name="android:windowTranslucentStatus">true</item>-->
+<!--       <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>-->
+<!--    <item name="navigationViewStyle">@style/Widget.App.NavigationView</item>-->
+
+
+    </style>
+
+
+    <style name="Theme.NavigationDrawer" parent="Base.Theme.NavigationDrawer" />
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+        <item name="android:radius">14dp</item>
+
+    </style>
+
+    <style name="Widget.App.NavigationView" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemIconTint">@color/black</item>
+        <item name="itemTextColor">@color/black</item>
+        <item name="itemShapeFillColor">@color/navigation_item_background_color</item>
+    </style>
+</resources>

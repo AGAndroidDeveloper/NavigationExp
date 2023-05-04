@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.ankitgupta.dev.navigationdrawer.HomeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_homeFragment_to_rewardFragment"
+            app:destination="@id/reward" />
+        <action
+            android:id="@+id/action_home_to_searchFragment"
+            app:destination="@id/setting" />
+        <action
+            android:id="@+id/action_home_to_send2"
+            app:destination="@id/send"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_home_to_blankFragment"
+            app:destination="@id/likes_Image" />
+    </fragment>
+    <fragment
+        android:id="@+id/reward"
+        android:name="com.ankitgupta.dev.navigationdrawer.RewardFragment"
+        android:label="Reward"
+        tools:layout="@layout/fragment_reward" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.ankitgupta.dev.navigationdrawer.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.ankitgupta.dev.navigationdrawer.UserFragment"
+        android:label="User"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.ankitgupta.dev.navigationdrawer.SearchFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/send"
+        android:name="com.ankitgupta.dev.navigationdrawer.send"
+        android:label="Outbox"
+        tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/likes_Image"
+        android:name="com.ankitgupta.dev.navigationdrawer.LikesFragment"
+        android:label="Likes"
+        tools:layout="@layout/fragment_blank" />
+</navigation>

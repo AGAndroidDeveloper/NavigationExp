@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="1dp"
+    android:layout_marginStart="1dp"
+    android:elevation="5dp"
+    android:fitsSystemWindows="true"
+    android:background="#8294C4">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/img_20220712_200657"
+
+        app:civ_border_color="#FF000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/amita_bold"
+        android:text="@string/ankit_gupta"
+        android:textColor="#FEFF86"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+           />
+
+    <TextView
+        android:id="@+id/userMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ankitgupta301409_gmail_com"
+        android:fontFamily="@font/amita_bold"
+        android:textColor="#FEFF86"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:contentDescription="@string/edit_profile"
+       android:padding="5dp"
+
+
+        android:src="@drawable/baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+
+
+        android:fontFamily="@font/amita_bold"
+        android:gravity="start"
+        android:text="Edit Profile"
+        android:textColor="#FEFF86"
+        android:paddingEnd="5dp"
+
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:fontFamily="@font/amita_bold"
+        app:layout_constraintStart_toStartOf="@+id/as"
+        app:layout_constraintEnd_toEndOf="@+id/as"
+        app:layout_constraintTop_toBottomOf="@+id/userMail"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

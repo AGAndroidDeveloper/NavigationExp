@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:openDrawer="start"
+
+    android:fitsSystemWindows="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+         >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:orientation="vertical"
+              >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                app:title="Bottom Navigation"
+                app:navigationIcon="@drawable/baseline_menu_24"
+                style="@style/MyToolbarStyle"
+
+
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+
+            android:id="@+id/nav_host_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_weight="1"
+
+            />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navView"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:menu="@menu/menu"
+            app:itemTextColor="@color/black"
+            android:background="@color/yellow"
+
+            />
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+       app:headerLayout="@layout/name_header"
+        app:menu="@menu/menu12"
+          app:elevation="16dp"
+        android:fitsSystemWindows="true"
+        app:itemShapeInsetStart = "8dp"
+        app:itemShapeInsetTop = "4dp"
+        app:itemShapeInsetEnd = "8dp"
+        app:itemShapeInsetBottom = "4dp"
+        app:itemHorizontalPadding="22dp"
+      app:itemShapeFillColor="@drawable/colormy"
+android:background="#AFD3E2"
+ />
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

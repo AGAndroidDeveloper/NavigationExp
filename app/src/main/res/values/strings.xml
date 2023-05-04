@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting">Setting</string>
+    <string name="send">Send</string>
+    <string name="likes">Likes</string>
+    <string name="delete">Delete</string>
+    <string name="shop">Shop</string>
+    <string name="more">More</string>
+    <string name="collection">collection</string>
+    <string name="home">Home</string>
+    <string name="reward">Reward</string>
+    <string name="profile">profile</string>
+    <string name="ankit_gupta">Ankit Gupta</string>
+    <string name="ankitgupta301409_gmail_com">ankitgupta301409@gmail.com</string>
+    <string name="edit_profile">edit profile</string>
+</resources>
